@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+@mixin customer-img-style {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+body{
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("background.jpg");
+    background-size: cover;
+    padding-bottom: 300px; //
+    .nav-ctr{
+        display: flex;
+        justify-content: space-around;
+        ul{
+            display: flex;
+            li{
+                list-style-type: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                margin-right: 2%;
+                font-weight: bold;
+            }
+        }
+    }
+    h1,p{
+        color: white;
+        text-align: center;        
+    }
+    h1{
+        font-size: 300%;
+        margin-top: 290px;
+        letter-spacing: 3px;
+    }
+}
+main{   
+    background: lightgray;
+    padding-top: 30px;
+    h2, p {        
+        text-align: center;
+    }
+    p{
+        color: grey;
+    }
+    .destination-section{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+        article{            
+            width: 30%;           
+            img{
+                width: 100%;
+            }
+            .destination-ctr{
+                background: white;
+                padding: 10px;
+                display: flex; 
+                justify-content: space-between; 
+                .destination-name{
+                    font-weight: bold;
+                }     
+                .destination-price{
+                    font-weight: bold;
+                }         
+            }
+        }
+    }
+    .customers-comments
+    {
+        background: white;
+        .inner-section{
+            display: flex; 
+            
+            img{
+                @include customer-img-style;
+            }
+            article{
+                text-align: center;
+            }            
+        }    
+    }    
+}

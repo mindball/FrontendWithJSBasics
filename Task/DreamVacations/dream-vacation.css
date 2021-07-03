@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+body {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.3)), to(rgba(20, 20, 20, 0.3))), url("background.jpg");
+  background: linear-gradient(rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.3)), url("background.jpg");
+  background-size: cover;
+  padding-bottom: 300px;
+}
+
+header .nav-ctr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .nav-ctr ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-ctr ul li {
+  list-style-type: none;
+  margin-right: 2%;
+  font-weight: bold;
+}
+
+header .nav-ctr ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+header h1, header p {
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 300%;
+  margin-top: 290px;
+  letter-spacing: 3px;
+}
+
+main {
+  background: lightgray;
+  padding-top: 30px;
+}
+
+main h2, main p {
+  text-align: center;
+}
+
+main p {
+  color: grey;
+}
+
+main .destination-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+}
+
+main .destination-section article {
+  width: 30%;
+}
+
+main .destination-section article img {
+  width: 100%;
+}
+
+main .destination-section article .destination-ctr {
+  background: white;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .destination-section article .destination-ctr .destination-name {
+  font-weight: bold;
+}
+
+main .destination-section article .destination-ctr .destination-price {
+  font-weight: bold;
+}
+
+main .customers-comments {
+  background: white;
+}
+
+main .customers-comments .inner-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .customers-comments .inner-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+main .customers-comments .inner-section article {
+  text-align: center;
+}
+/*# sourceMappingURL=dream-vacation.css.map */
